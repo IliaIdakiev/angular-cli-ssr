@@ -4,6 +4,8 @@ This simple Angular CLI Server Side Rendering project was created to be used as 
 
 ## General Info:
 
+* Install dependencies - `yarn` or `npm i`
+
 * Build application - `gulp`
 
   There are two build steps. 
@@ -23,6 +25,8 @@ Code separation:
 ## Debugging
 
 * Project is configured for debugging in Visual Studio Code. Inside VSC go to the Debug section, select `Launch program` and press `start debugging` button.
+
+* Brakepoints insede angular code will become active when `renderModuleFactory` inside `./src/server.ts` is called.
 
 ## Using 'ng g' / 'ng generate'
 
