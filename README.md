@@ -20,7 +20,7 @@ Code separation:
 
 ## Debugging
 
-* Project is setup for debugging in Visual Studio Code. Inside VSC go to the Debug section, select `Launch program` and press `start debugging` button.
+* Project is configured for debugging in Visual Studio Code. Inside VSC go to the Debug section, select `Launch program` and press `start debugging` button.
 
 ## Using 'ng g' / 'ng generate'
 
