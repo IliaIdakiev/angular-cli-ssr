@@ -15,9 +15,7 @@
         "${workspaceRoot}/src/server.ts"
       ],
       "preLaunchTask": "build",
-      "outFiles": [
-        "${workspaceRoot}/out-tsc/**/*.js"
-      ]
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
