@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'app';
 
   constructor() {
-    console.log('Hello App Component');
+    console.log('App Component Constructor');
   }
 }
