@@ -8,8 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "generate-ng-server": "node_modules/.bin/ngc --aot -p ./src/tsconfig.server.json"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
