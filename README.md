@@ -1,12 +1,14 @@
 # Angular Server Side Rendering + Angular CLI version 1.2.5
 
-General Info:
+This simple Angular CLI Server Side Rendering project was created to be used as base for a demo app for my talk about - `Angular Server Side Rendering Hacks` @ [JSTalks Conference](http://jstalks.net/). If you are interested you can join the [event on facebook](https://www.facebook.com/events/339156366523375/) or register [here](https://www.eventbrite.com/e/jstalks-bulgaria-2017-tickets-36044567271?aff=efbevent).
+
+## General Info:
 
 * Build application - `gulp`
 
-  We have two build steps. 
-    1. AOT using `ng build` that will generate the angular bundles that are used in the browser.
-    2. Using `ngc` we build angular AOT so it can be used on the server. This creates the module factory that is used inside `src/server.ts`
+  There are two build steps. 
+    1. AOT using `ng build` - generates the angular bundles used in the browser.
+    2. AOT using `ngc` - generates the angular factories used on the server. This creates the module factory that is used inside `src/server.ts`
 
 * Running application - `node_modules/.bin/ts-node ./src/server.ts` or simply `npm run serve` or `yarn serve`
 
