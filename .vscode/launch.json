@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "runtimeExecutable": "./node_modules/.bin/ts-node",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node",
       "args": [
         "--compilerOptions",
         "{\"sourceMap\": true, \"inlineSourceMap\": true}",

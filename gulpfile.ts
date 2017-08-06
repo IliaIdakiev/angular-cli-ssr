@@ -26,7 +26,6 @@ const clean = (paths: string[]) => cb => {
   });
 };
 
-
 gulp.task('build-ng-browser-aot', task('ng aot browser build', 'ng', ['build', '--aot']));
 gulp.task('build-ng-server', task('ng server build', 'ngc', ['--aot', '-p', './src/tsconfig.server.json']));
 
