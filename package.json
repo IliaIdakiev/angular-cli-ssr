@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve": "node_modules/.bin/ts-node ./src/server.ts"
+    "ts_serve": "node_modules/.bin/ts-node ./src/server.ts",
+    "serve": "node ./out/server.js"
   },
   "private": true,
   "dependencies": {

@@ -43,3 +43,6 @@ Thumbs.db
 
 # Angular Factories
 /src/ngfactory/*
+
+# Server Dist Dir
+/out/*

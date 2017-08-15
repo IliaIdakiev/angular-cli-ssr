@@ -7,7 +7,20 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Launch",
+      "program": "${workspaceRoot}/out/server.js",
+      "cwd": "${workspaceRoot}",
+      "outFiles": [
+        "${workspaceRoot}/out/**/*.js"
+      ],
+      "sourceMaps": true,
+      "preLaunchTask": "buildall",
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "TS Launch",
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node",
       "args": [
         "--compilerOptions",

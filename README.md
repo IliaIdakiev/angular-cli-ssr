@@ -6,15 +6,29 @@ This simple Angular CLI Server Side Rendering project was created to be used as 
 
 * Install dependencies - `yarn` or `npm i`
 
-* Build application - `gulp`
+* Building the app:
+  
+  ---
+  1. TS NODE
+    * build for ts-node - `gulp`
 
-  There are two build steps. 
-    1. AOT using `ng build` - generates the angular bundles used in the browser.
-    2. AOT using `ngc` - generates the angular factories used on the server. This creates the module factory that is used inside `src/server.ts`
+      There are two build steps. 
+        1. AOT using `ng build` - generates the angular bundles used in the browser.
+        2. AOT using `ngc` - generates the angular factories used on the server. This creates the module factory that is used inside `src/server.ts`
 
-* Running application - `node_modules/.bin/ts-node ./src/server.ts` or simply `npm run serve` or `yarn serve` -> [http://localhost:8080/](http://localhost:8080/)
+    * Running application with ts-node - `node_modules/.bin/ts-node ./src/server.ts` or simply `npm run ts_serve` or `yarn ts_serve` -> [http://localhost:8080/](http://localhost:8080/)
 
-  Since `ts-node` is used to run the server it's necessary to have the `src` folder present at all time. However, if we want to use `node` instead of `ts-node` it's possible to reconfigure the build process so all files are compiled to es2015 and extracted to an output folder that will contain all the necessary files.
+      Since `ts-node` is used to run the server it's necessary to have the `src` folder present at all time. However, if we want to use `node` instead of `ts-node` use the steps bellow.
+
+  --- 
+  2. NODE (Preferred way)
+    * build for node - `gulp build_all`
+
+    * Running application with node - `node ./out/server.js` or simply `npm run serve` or `yarn serve` -> [http://localhost:8080/](http://localhost:8080/)
+
+    All files are compiled to es2015 and extracted to the `out` folder.
+
+  ---
 
 Code separation:
 
@@ -24,7 +38,7 @@ Code separation:
 
 ## Debugging
 
-* Project is configured for debugging in Visual Studio Code. Inside VSC go to the Debug section, select `Launch program` and press `start debugging` button.
+* Project is configured for debugging in Visual Studio Code. Inside VSC go to the Debug section, select `Launch` to start the application with node or `TS Launch` to start it with ts-node and press `start debugging` button. (build process will be started before each launch)
 
 * Brakepoints insede angular code will become active when `renderModuleFactory` inside `./src/server.ts` is called.
 
