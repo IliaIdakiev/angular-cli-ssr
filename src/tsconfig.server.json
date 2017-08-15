@@ -10,7 +10,8 @@
     "test.ts",
     "server.ts",
     "**/*.spec.ts",
-    "**/*.browser.ts"
+    "**/*.browser.ts",
+    "ngfactory/**/*"
   ],
   "angularCompilerOptions": {
     "entryModule": "./app/app.module.server#AppModuleServer",

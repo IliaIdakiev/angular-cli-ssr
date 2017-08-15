@@ -41,7 +41,6 @@ gulp.task('ng-factory-build', cb =>
 
 gulp.task('default', cb =>
   runSequence(
-    'clean-ngfactory',
     'build-ng-browser-aot',
     'ng-factory-build',
     'clean-outdir',

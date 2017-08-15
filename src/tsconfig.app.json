@@ -11,6 +11,7 @@
     "server.ts",
     "test.ts",
     "**/*.spec.ts",
-    "**/*.server.ts"
+    "**/*.server.ts",
+    "ngfactory/**/*"
   ]
 }
