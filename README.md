@@ -1,4 +1,4 @@
-# Angular Server Side Rendering + Angular CLI version 1.2.5
+# Angular (Universal) Server Side Rendering + Angular CLI version 1.2.5
 
 This simple Angular CLI Server Side Rendering project was created to be used as base for a demo app for my talk about - `Angular Server Side Rendering Hacks` @ [JSTalks Conference](http://jstalks.net/). If you are interested you can join the [event on facebook](https://www.facebook.com/events/339156366523375/) or register [here](https://www.eventbrite.com/e/jstalks-bulgaria-2017-tickets-36044567271?aff=efbevent).
 
