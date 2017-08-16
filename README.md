@@ -9,7 +9,15 @@ This simple Angular CLI Server Side Rendering project was created to be used as 
 * Building the app:
   
   ---
-  1. TS NODE
+  1. NODE (Preferred way)
+    * build for node - `gulp build_all`
+
+    * Running application with node - `node ./out/server.js` or simply `npm run serve` or `yarn serve` -> [http://localhost:8080/](http://localhost:8080/)
+
+    All files are compiled to es2015 and extracted to the `out` folder.
+
+  ---
+  2. TS NODE (Error-prone way)
     * build for ts-node - `gulp`
 
       There are two build steps. 
@@ -21,14 +29,6 @@ This simple Angular CLI Server Side Rendering project was created to be used as 
       Since `ts-node` is used to run the server it's necessary to have the `src` folder present at all time. However, if we want to use `node` instead of `ts-node` use the steps bellow.
 
   --- 
-  2. NODE (Preferred way)
-    * build for node - `gulp build_all`
-
-    * Running application with node - `node ./out/server.js` or simply `npm run serve` or `yarn serve` -> [http://localhost:8080/](http://localhost:8080/)
-
-    All files are compiled to es2015 and extracted to the `out` folder.
-
-  ---
 
 Code separation:
 
