@@ -15,6 +15,7 @@
   ],
   "angularCompilerOptions": {
     "entryModule": "./app/app.module.server#AppModuleServer",
-    "genDir": "./ngfactory"
+    "genDir": "./ngfactory",
+    "skipMetadataEmit" : true
   }
 }
