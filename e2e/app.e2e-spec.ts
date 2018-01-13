@@ -1,10 +1,10 @@
-import { SsrNgSeedPage } from './app.po';
+import { AppPage } from './app.po';
 
 describe('ssr-ng-seed App', () => {
-  let page: SsrNgSeedPage;
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new SsrNgSeedPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {

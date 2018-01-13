@@ -7,14 +7,6 @@
       "taskName": "build",
       "command": "gulp",
       "type": "shell"
-    },
-    {
-      "taskName": "buildall",
-      "command": "gulp",
-      "args": [
-        "build_all"
-      ],
-      "type": "shell"
     }
   ]
 }

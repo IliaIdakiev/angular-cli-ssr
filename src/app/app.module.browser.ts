@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule.withServerTransition({ appId: 'ssr-ng-seed' })
   ],
   providers: [],
   bootstrap: [AppComponent]
