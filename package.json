@@ -24,7 +24,6 @@
     "@angular/platform-server": "^5.2.0",
     "@angular/router": "^5.1.0",
     "core-js": "^2.4.1",
-    "raf": "^3.4.0",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.19"
   },
