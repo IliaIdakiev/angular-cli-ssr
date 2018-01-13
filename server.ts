@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import 'zone.js/dist/zone-node';
+import 'zone.js';
 import * as express from 'express';
 import * as path from 'path';
 
@@ -7,7 +7,8 @@ import { renderModuleFactory } from '@angular/platform-server';
 import { enableProdMode } from '@angular/core';
 
 import { readFileSync } from 'fs';
-import { AppModuleServerNgFactory } from './ngfactory/app/app.module.server.ngfactory';
+
+const AppModuleServerNgFactory = require('./out-ngc/src/app/app.module.server.ngfactory').AppModuleServerNgFactory;
 
 enableProdMode();
 

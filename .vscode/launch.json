@@ -7,27 +7,26 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch",
-      "program": "${workspaceRoot}/out/server.js",
+      "name": "Build & Launch",
+      "program": "${workspaceRoot}/server.ts",
       "cwd": "${workspaceRoot}",
       "outFiles": [
-        "${workspaceRoot}/out/**/*.js"
+        "${workspaceRoot}/out-server/**/*.js"
       ],
       "sourceMaps": true,
-      "preLaunchTask": "buildall",
+      "preLaunchTask": "build",
       "internalConsoleOptions": "openOnSessionStart"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "TS Launch",
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node",
-      "args": [
-        "--compilerOptions",
-        "{\"sourceMap\": true, \"inlineSourceMap\": true}",
-        "${workspaceRoot}/src/server.ts"
+      "name": "Launch",
+      "program": "${workspaceRoot}/server.ts",
+      "cwd": "${workspaceRoot}",
+      "outFiles": [
+        "${workspaceRoot}/out-server/**/*.js"
       ],
-      "preLaunchTask": "build",
+      "sourceMaps": true,
       "internalConsoleOptions": "openOnSessionStart"
     }
   ]
