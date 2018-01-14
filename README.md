@@ -4,13 +4,15 @@ This simple Angular CLI Server Side Rendering project was created with Angular C
 
 ## General Info:
 
-* Install dependencies - `yarn` or `npm i`
+* Install dependencies - `yarn` / `npm i`
 
 * Building the app:
   
-    * build for node - `gulp`
+    * development build - `gulp`
 
-    * Running application with node - `node ./out-server/server.js` or simply `npm run ssr-serve` or `yarn ssr-serve` -> [http://localhost:8080/](http://localhost:8080/)
+    * production build - `gulp prod`
+
+    * Running application with node - `node ./out-server/server.js` or simply `yarn ssr-serve` / `npm run ssr-serve` -> [http://localhost:8080/](http://localhost:8080/)
 
     All server files are compiled to es2015 and extracted to the `out-server` folder. All browser files are inside the `dist` folder.
 

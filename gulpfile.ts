@@ -26,6 +26,7 @@ const clean = (paths: string[]) => cb => {
   });
 };
 
+gulp.task('build-ng-browser-prod', task('prod angular browser build', 'ng', ['build', '--prod']));
 gulp.task('build-ng-browser-aot', task('angular aot browser build', 'ng', ['build', '--aot']));
 gulp.task('build-ng-server', task('angular server build', 'ngc', ['-p', './src/tsconfig.server.json']));
 gulp.task('build-server', task('server build', 'tsc', ['-p', './tsconfig.main.json']));
@@ -36,6 +37,15 @@ gulp.task('default', cb =>
   runSequence(
     'clean-main',
     'build-ng-browser-aot',
+    'build-ng-server',
+    'build-server',
+    cb
+  ));
+
+gulp.task('prod', cb =>
+  runSequence(
+    'clean-main',
+    'build-ng-browser-prod',
     'build-ng-server',
     'build-server',
     cb
